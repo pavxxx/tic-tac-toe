@@ -1,0 +1,114 @@
+body{
+    background-image: url('../assets/pattern-bg.png');
+    background-size: cover;       /* Scales the image */
+    background-position: center;
+    background-repeat: no-repeat; /* Prevents repeating */
+    min-height: 60vh;
+    opacity: 0.9;
+}
+.container {
+    text-align: center;
+}
+
+.title {
+    margin-top: 50px;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow:2px 2px 0 #282c34,4px 4px 0 #000000;
+    color: #3a3a98;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title img {
+    padding: 20px;
+    height: 50px;
+}
+
+.reset {
+    width: 200px;
+    height: 75px;
+    border: 5px solid;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50px;
+    background: #2c2c5e;
+    font-size: 25px;
+    color: #a3c3ec;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    box-shadow: 2px 2px 2px #282c34;
+}
+
+.reset:hover {
+    background: #a3c3ec;
+    color: #2c2c5e;
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+}
+
+.board {
+    height: auto;
+    width: 565px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.row1,
+.row2,
+.row3 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    width: 180px;
+    background: #3d4293;
+    border: 4px solid #2c2c5e;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.boxes:hover {
+    background: #2c2c5e;
+}
+
+.boxes img {
+    margin: 0;
+    padding: 0;
+    height: 80px;
+    width: 80px;
+    display: block;
+}
+
+
+
+.x-win {
+    background-color: #ffc107 !important;
+    box-shadow: 0 0 20px #ffd700;
+    transition: all 0.2s ease-in-out;
+}
+
+.o-win {
+    background-color: #1b9d78 !important ;
+    box-shadow: 0 0 20px #25d09f;
+    transition: all 0.2s ease-in-out;
+}
+
+.icon {
+    filter: drop-shadow(0 0 2px black);
+}
+
+.winnericon{
+    margin: 0 8px;
+    filter: drop-shadow(2px 2px 2px #000) drop-shadow(4px 4px 2px rgba(0, 0, 0, 0.4));
+}
