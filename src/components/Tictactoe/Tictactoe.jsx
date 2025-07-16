@@ -43,6 +43,10 @@ const Tictactoe = () => {
                 return;
             }
         }
+        if (data.every(cell => cell !== "")) {
+            setLock(true);
+            titleRef.current.innerHTML = `It's a Draw!`;
+        }
     };
 
     const won = (winner) => {

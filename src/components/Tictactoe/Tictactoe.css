@@ -26,6 +26,16 @@ body{
     height: 50px;
 }
 
+.title:hover{
+    color: #24226d;
+    text-shadow:2px 2px 0 #282c34,4px 4px 0 #000000;
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    border-color: #282c34;
+
+}
+
 .reset {
     width: 200px;
     height: 75px;
@@ -40,10 +50,10 @@ body{
     margin-top: 25px;
     margin-bottom: 50px;
     box-shadow:
-            0 6px #3a3a98,          
-            -6px 0 #475072,     
-            0 -6px #413e8b, 
-            6px 0 #3a3f80;                  
+            0 6px #3a3a98,                   /* bottom edge shadow */
+            -6px 0 #475072,                  /* left edge */
+            0 -6px #413e8b,                  /* top edge highlight */
+            6px 0 #3a3f80;                   /* right edge */
     text-shadow: 1px 1px #000;
     transition: transform 0.1s ease;
 }
@@ -72,6 +82,7 @@ body{
     gap: 10px;
 }
 
+
 .boxes {
     display: flex;
     justify-content: center;
@@ -85,9 +96,13 @@ body{
     transition: background 0.2s ease;
 }
 
+
 .boxes:hover {
     background: #2c2c5e;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
+
 
 .boxes img {
     margin: 0;
