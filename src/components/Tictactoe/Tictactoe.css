@@ -29,16 +29,23 @@ body{
 .reset {
     width: 200px;
     height: 75px;
-    border: 5px solid;
+    border: 3px solid;
     outline: none;
     cursor: pointer;
     border-radius: 50px;
     background: #2c2c5e;
-    font-size: 25px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 23px;
     color: #a3c3ec;
     margin-top: 25px;
     margin-bottom: 50px;
-    box-shadow: 2px 2px 2px #282c34;
+    box-shadow:
+            0 6px #3a3a98,          
+            -6px 0 #475072,     
+            0 -6px #413e8b, 
+            6px 0 #3a3f80;                  
+    text-shadow: 1px 1px #000;
+    transition: transform 0.1s ease;
 }
 
 .reset:hover {
